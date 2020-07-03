@@ -8,6 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Christmas Lights',
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.grey[900],
