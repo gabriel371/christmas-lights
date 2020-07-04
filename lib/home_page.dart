@@ -8,7 +8,7 @@ class HomePage extends StatefulWidget {
   _HomePageState createState() => _HomePageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
   List<Color> colorList = [
     Colors.red,
     Colors.green,
@@ -16,27 +16,111 @@ class _HomePageState extends State<HomePage> {
     Colors.yellow,
     Colors.purple,
     Colors.orange,
+    Colors.lime,
+    Colors.indigo,
   ];
-
-  Color color;
-
-  cycleColors() {
-    setState(() {
-      color = colorList[Random().nextInt(5)];
-    });
-  }
 
   @override
   Widget build(BuildContext context) {
-    cycleColors();
     return Scaffold(
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          LightWidget(
-            color: color,
-          ),
-        ],
+      body: Padding(
+        padding: EdgeInsets.all(30),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            LightWidget(color: colorList[Random().nextInt(7)]),
+            Container(
+              margin: EdgeInsets.only(bottom: 25),
+              height: 5,
+              width: 30,
+              decoration: BoxDecoration(
+                color: Colors.grey[700],
+              ),
+            ),
+            LightWidget(color: colorList[Random().nextInt(7)]),
+            Container(
+              margin: EdgeInsets.only(bottom: 25),
+              height: 5,
+              width: 30,
+              decoration: BoxDecoration(
+                color: Colors.grey[700],
+              ),
+            ),
+            LightWidget(color: colorList[Random().nextInt(7)]),
+            Container(
+              margin: EdgeInsets.only(bottom: 25),
+              height: 5,
+              width: 30,
+              decoration: BoxDecoration(
+                color: Colors.grey[700],
+              ),
+            ),
+            LightWidget(color: colorList[Random().nextInt(7)]),
+            Container(
+              margin: EdgeInsets.only(bottom: 25),
+              height: 5,
+              width: 30,
+              decoration: BoxDecoration(
+                color: Colors.grey[700],
+              ),
+            ),
+            LightWidget(color: colorList[Random().nextInt(7)]),
+            Container(
+              margin: EdgeInsets.only(bottom: 25),
+              height: 5,
+              width: 30,
+              decoration: BoxDecoration(
+                color: Colors.grey[700],
+              ),
+            ),
+            LightWidget(color: colorList[Random().nextInt(7)]),
+            Container(
+              margin: EdgeInsets.only(bottom: 25),
+              height: 5,
+              width: 30,
+              decoration: BoxDecoration(
+                color: Colors.grey[700],
+              ),
+            ),
+            LightWidget(color: colorList[Random().nextInt(7)]),
+            Container(
+              margin: EdgeInsets.only(bottom: 25),
+              height: 5,
+              width: 30,
+              decoration: BoxDecoration(
+                color: Colors.grey[700],
+              ),
+            ),
+            LightWidget(color: colorList[Random().nextInt(7)]),
+            Container(
+              margin: EdgeInsets.only(bottom: 25),
+              height: 5,
+              width: 30,
+              decoration: BoxDecoration(
+                color: Colors.grey[700],
+              ),
+            ),
+            LightWidget(color: colorList[Random().nextInt(7)]),
+            Container(
+              margin: EdgeInsets.only(bottom: 25),
+              height: 5,
+              width: 30,
+              decoration: BoxDecoration(
+                color: Colors.grey[700],
+              ),
+            ),
+            LightWidget(color: colorList[Random().nextInt(7)]),
+            Container(
+              margin: EdgeInsets.only(bottom: 25),
+              height: 5,
+              width: 30,
+              decoration: BoxDecoration(
+                color: Colors.grey[700],
+              ),
+            ),
+            LightWidget(color: colorList[Random().nextInt(7)]),
+          ],
+        ),
       ),
     );
   }
